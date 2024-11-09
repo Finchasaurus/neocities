@@ -83,7 +83,7 @@
 	padding: 10px;
 	overflow: hidden;
 	box-shadow: inset 2px 2px 0 var(--color-shadow);
-	display: flex;
+	display: inline-block;
 	gap: 10px;
 	flex-direction: column;
 }
