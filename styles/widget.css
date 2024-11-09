@@ -81,6 +81,7 @@
 	line-height: 1.4;
 	font-family: monospace;
 	padding: 10px;
+	height: fit-content
 	overflow: hidden;
 	box-shadow: inset 2px 2px 0 var(--color-shadow);
 	display: inline-block;
