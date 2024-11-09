@@ -1,0 +1,18 @@
+.bg-box {
+	background-color: var(--color-white);
+	background-image: linear-gradient(var(--color-dark-gray) var(--bg-size), transparent var(--bg-size)),
+		linear-gradient(to right, var(--color-dark-gray) var(--bg-size), var(--color-white) var(--bg-size));
+	background-size: 20px 20px;
+}
+
+.bg-text {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	font-size: 15.5em;
+	color: var(--color-white);
+	-webkit-text-stroke-color: var(--color-shadow);
+	-webkit-text-stroke-width: var(--border-size);
+	z-index: -1;
+}
