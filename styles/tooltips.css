@@ -11,7 +11,7 @@
 .tooltip .tooltip-text {
 	pointer-events: none;
 	opacity: 0;
-	background: var(--frappe-surface1);
+	background: var(--frappe-surface2);
 	border: var(--border-size) solid var(--frappe-crust);
 	box-shadow: var(--shadow-size) var(--shadow-size) 0 var(--color-shadow);
 	box-sizing: border-box;
