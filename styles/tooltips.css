@@ -1,0 +1,43 @@
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip:not(.no-tooltip-decorations),
+.mock-tooltip-decorations {
+	border-bottom: var(--outline-size) dashed var(--frappe-crust);
+}
+
+.tooltip .tooltip-text {
+	pointer-events: none;
+	opacity: 0;
+	background: var(--frappe-surface1);
+	border: var(--border-size) solid var(--frappe-crust);
+	box-shadow: var(--shadow-size) var(--shadow-size) 0 var(--color-shadow);
+	box-sizing: border-box;
+	color: var(--frappe-text);
+	font-family: monospace;
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 5px;
+
+	display: block;
+
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+
+	word-wrap: break-word;
+	transition: opacity 0.1s ease-in-out;
+}
+
+.tooltip .tooltip-text.tooltip-position-bottom {
+	top: 100%;
+	height: max-content;
+}
+
+.tooltip:hover .tooltip-text {
+	opacity: 1;
+	pointer-events: auto;
+}
