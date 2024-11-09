@@ -1,0 +1,50 @@
+body {
+	overflow: hidden;
+	margin: 0;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+	animation: sway 1s both infinite;
+}
+
+@keyframes sway {
+	0% {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(15deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	80% {
+		transform: rotate(-15deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+div {
+	font-size: 10em;
+}
+
+a {
+	cursor: default;
+	height: 100vh;
+	background-color: transparent;
+	text-align: center;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+		sans-serif;
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	color: black;
+}

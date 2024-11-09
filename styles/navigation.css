@@ -1,0 +1,26 @@
+nav {
+	position: fixed;
+	width: 100%;
+	background-color: var(--frappe-surface1);
+	outline: var(--border-size) solid var(--frappe-crust);
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	padding: 6px 0 6px 0;
+	gap: 4px;
+	text-transform: lowercase;
+}
+
+nav button {
+	border: var(--border-size) solid var(--frappe-crust);
+	background-color: var(--color-gray);
+	text-transform: lowercase;
+}
+
+nav button:hover {
+	background-color: var(--color-dark-gray);
+}
+
+nav a {
+	text-transform: lowercase;
+}

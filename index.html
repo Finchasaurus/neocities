@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Theo Renders</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="/styles/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/styles/widget.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/styles/animations.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/styles/perspective.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/styles/navigation.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="icon" type="image/x-icon" href="/assets/shuichi.jpg" />
+	</head>
+	<body class="bg-box">
+		<nav>
+			<button class="display-widgets">Bring all windows back</button>
+			<button class="reset"><a href="/">Reset</a></button>
+		</nav>
+		<section class="widget-container">
+			<div class="widget play-animation">
+				<div class="widget-content">
+					<div class="caption">This is my first time diving deep into web development!</div>
+				</div>
+			</div>
+			<div class="widget play-animation wiggle-shake">
+				<div class="widget-content">
+					<div class="caption">Everything can move!</div>
+				</div>
+			</div>
+			<div class="widget play-animation no-resize">
+				<div class="widget-content perspective" style="width: 200px; height: 200px">
+					<div class="box">
+						<div class="face top">😀</div>
+						<div class="face bottom">😚</div>
+						<div class="face back">🥰</div>
+						<div class="face front">😎</div>
+						<div class="face left">🥴</div>
+						<div class="face right">🥺</div>
+					</div>
+				</div>
+			</div>
+			<div class="widget play-animation wiggle-shake">
+				<header class="widget-header">
+					<span class="header-text">Theo!</span>
+					<button>X</button>
+				</header>
+				<div class="widget-content">
+					<a href="/mommy.html"> <img src="/assets/shuichi.jpg" /></a>
+					<div class="caption">another she/her</div>
+				</div>
+			</div>
+			<div class="widget">
+				<header class="widget-header">meow posting🐈</header>
+				<div class="widget-content scrollable" style="max-height: 20vh; display: block">
+					<h1>meow meow meow</h1>
+					<div>meow meow meow</div>
+					<div>meow meow meow</div>
+					<div>meow meow meow</div>
+					<div>meow meow meow</div>
+					<div>meow meow meow</div>
+					<div>meow meow meow</div>
+					<div>meow meow meow</div>
+					<div>meow meow meow</div>
+					<div>meow meow meow</div>
+					<div>meow meow meow</div>
+					<div>meow meow meow</div>
+				</div>
+			</div>
+			<div class="widget">
+				<header class="widget-header">favourite games👾</header>
+				<div class="widget-content scrollable" style="max-height: 20vh; display: block">
+					<ul>
+						<a href="/yorha.html">NieR:Automata</a>
+					</ul>
+				</div>
+			</div>
+			<div class="widget">
+				<header class="widget-header">Tunes🎶</header>
+				<div class="widget-content scrollable" style="max-height: 20vh; display: block">
+					<audio controls autoplay loop>
+						<source src="assets/toby fox - UNDERTALE Soundtrack - 12 Home.mp3" type="audio/mpeg" />
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+			</div>
+		</section>
+		<script src="/scripts/draggable-widget.js"></script>
+	</body>
+</html>
