@@ -1,13 +1,13 @@
 .widget-container {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 10px;
 	padding: 20px;
 	align-items: flex-start;
 	justify-content: flex-start;
 	max-height: 100vh;
-	padding-left: 128px;
-	padding-right: 128px;
+	padding-left: 64px;
+	padding-right: 64px;
 }
 
 .widget {
