@@ -29,7 +29,7 @@
 	width: var(--size);
 	aspect-ratio: 1;
 
-	background-color: hsl(from var(--color-peach) h s var(--lightness));
+	background-color: hsl(from var(--color-blue) h s var(--lightness));
 
 	transform-style: preserve-3d;
 	text-align: center;
