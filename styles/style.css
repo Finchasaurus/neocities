@@ -34,47 +34,17 @@
 	--bg-size: 2px;
 }
 
+@font-face {
+	font-family: eva;
+	src: url("/assets/NIS-JTC-Win-M9.ttf");
+}
+
 body {
 	background-color: var(--frappe-base);
 	color: var(--frappe-text);
-	font-family: Arial, sans-serif;
+	font-family: eva;
 	font-size: 16px;
 	line-height: 1.6;
 	padding: 0;
 	margin: 0;
-}
-
-img,
-.caption {
-	border: var(--border-size) solid var(--frappe-crust);
-}
-
-.caption {
-	background-color: var(--frappe-surface1);
-	padding: 4px;
-	text-transform: lowercase;
-}
-
-::selection {
-	color: var(--color-bright-pink);
-	background: var(--color-maroon);
-}
-
-a {
-	color: var(--frappe-text);
-	text-decoration: none;
-}
-
-a:visited {
-	color: var(--frappe-text);
-	text-decoration: none;
-}
-
-a:hover {
-	color: var(--frappe-text);
-	text-decoration: none;
-}
-
-hr {
-	border: var(--outline-size) dashed var(--frappe-crust);
 }
