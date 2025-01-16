@@ -12,26 +12,6 @@
 	--color-mauve: #b18eab;
 	--color-bright-pink: #d64b6a;
 	--color-bright-orange: #e89e3d;
-	--color-shadow: rgba(0, 0, 0, 0.15);
-
-	/* Neutrals */
-	--color-white: #ffffff;
-	--color-light-gray: #e4e2da;
-	--color-gray: #e9e9ed;
-	--color-dark-gray: #d4d4d4;
-	--color-black: #1a1a1a;
-
-	/* Base Backgrounds */
-	--frappe-base: #ffffff;
-	--frappe-text: #333333;
-	--frappe-surface1: #a9bedc;
-	--frappe-surface2: #b0d1f5;
-	--frappe-crust: #4b3829;
-
-	--border-size: 2px;
-	--outline-size: 1px;
-	--shadow-size: 4px;
-	--bg-size: 2px;
 }
 
 @font-face {
@@ -40,11 +20,45 @@
 }
 
 body {
-	background-color: var(--frappe-base);
+	background-color: var(--color-bright-orange);
 	color: var(--frappe-text);
 	font-family: eva;
 	font-size: 16px;
 	line-height: 1.6;
 	padding: 0;
 	margin: 0;
+	display: flex;
+	overflow: hidden;
+}
+
+body header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background-color: var(--color-bright-orange);
+}
+
+body nav {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 50px;
+	left: 0;
+	height: calc(100% - 50px);
+	width: 200px;
+	background-color: var(--color-bright-orange);
+}
+
+body main {
+	margin-top: 50px;
+	margin-left: 200px;
+	flex: 1;
+	background-color: var(--color-bright-pink);
+	overflow: auto;
+	z-index: 1;
+	min-height: calc(100vh - 50px);
+	border-radius: 20px 0 0 0;
+	padding: 10px 10px;
 }
