@@ -29,6 +29,7 @@ body {
 	margin: 0;
 	display: flex;
 	overflow: hidden;
+	user-select: none;
 }
 
 body header {
@@ -43,12 +44,49 @@ body header {
 body nav {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: right;
 	position: fixed;
 	top: 50px;
 	left: 0;
 	height: calc(100% - 50px);
 	width: 200px;
 	background-color: var(--color-bright-orange);
+	gap: 5px;
+}
+
+body nav div {
+	float: left;
+	width: fit-content;
+	background-color: #5c9bee;
+	border-radius: 0 20px 20px 0;
+	border-style: solid solid solid none;
+	padding: 5px 20px 5px 10px;
+	transform-origin: left;
+}
+
+body nav div:hover {
+	animation: hover 0.1s forwards;
+}
+
+@keyframes hover {
+	0% {
+		background-color: #5c9bee;
+		padding-right: 20px;
+	}
+	100% {
+		background-color: #5461c8;
+		padding-right: 50px;
+	}
+}
+
+body nav footer {
+	border-style: solid none none none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: inherit;
+	height: 20px;
 }
 
 body main {
@@ -62,15 +100,6 @@ body main {
 	border-radius: 20px 0 0 0;
 	border-style: solid;
 	padding: 10px 10px;
-}
-
-body nav footer {
-	border-style: solid none none none;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: inherit;
-	height: 20px;
 }
 
 .stripe {
@@ -94,7 +123,29 @@ body nav footer {
 		#00a3e0
 	);
 	background-size: 200% 100%;
-	animation: moveStripe 10s linear infinite;
+	animation: moveStripe 10s linear infinite reverse;
+}
+
+.hover-stripe *:hover {
+	background: linear-gradient(
+		to right,
+		#5461c8,
+		#5461c8 12.5%,
+		#c724b1 12.5%,
+		#c724b1 25%,
+		#e4002b 25%,
+		#e4002b 37.5%,
+		#ff6900 37.5%,
+		#ff6900 50%,
+		#f6be00 50%,
+		#f6be00 62.5%,
+		#97d700 62.5%,
+		#97d700 75%,
+		#00ab84 75%,
+		#00ab84 87.5%,
+		#00a3e0 87.5%,
+		#00a3e0
+	);
 }
 
 @keyframes moveStripe {
