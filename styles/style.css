@@ -29,7 +29,6 @@ body {
 	margin: 0;
 	display: flex;
 	overflow: hidden;
-	user-select: none;
 }
 
 body header {
@@ -53,6 +52,7 @@ body nav {
 	width: 200px;
 	background-color: var(--color-bright-orange);
 	gap: 5px;
+	user-select: none;
 }
 
 body nav div {
