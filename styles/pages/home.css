@@ -14,15 +14,15 @@
 	--color-bright-orange: #e89e3d;
 }
 
-@font-face {
+/* @font-face {
 	font-family: eva;
 	src: url("/assets/fonts/NIS-JTC-Win-M9.ttf");
-}
+} */
 
 body {
 	background-color: var(--color-bright-orange);
 	color: var(--frappe-text);
-	font-family: eva;
+	/* font-family: eva; */
 	font-size: 16px;
 	line-height: 1.6;
 	padding: 0;
