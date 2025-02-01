@@ -116,7 +116,7 @@ body main {
 	z-index: 1;
 	min-height: calc(100vh - 50px);
 	border-radius: 20px 0 0 0;
-	border-style: solid;
+	border-style: solid none none solid;
 	padding: 10px 10px;
 }
 
