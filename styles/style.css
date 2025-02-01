@@ -126,7 +126,7 @@ body main {
 	animation: moveStripe 10s linear infinite reverse;
 }
 
-.hover-stripe *:hover {
+.hover-stripe *:not(.stripe):hover {
 	background: linear-gradient(
 		to right,
 		#5461c8,
