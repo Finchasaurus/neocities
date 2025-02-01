@@ -73,7 +73,7 @@ body nav {
 	user-select: none;
 }
 
-body nav div {
+body nav .button {
 	float: left;
 	width: fit-content;
 	background-color: #5c9bee;
@@ -83,7 +83,7 @@ body nav div {
 	transform-origin: left;
 }
 
-body nav div:hover {
+body nav .button:hover {
 	animation: hover 0.1s forwards;
 }
 
@@ -105,6 +105,7 @@ body nav footer {
 	left: 0;
 	width: inherit;
 	height: 20px;
+	z-index: 10;
 }
 
 body main {
@@ -121,6 +122,8 @@ body main {
 }
 
 .stripe {
+	width: 100%;
+	height: 100%;
 	background: linear-gradient(
 		to right,
 		#5461c8,
@@ -144,7 +147,7 @@ body main {
 	animation: moveStripe 10s linear infinite reverse;
 }
 
-.hover-stripe *:not(.stripe):hover {
+.hover-stripe > *:not(.stripe):not(.no-stripe):hover {
 	background: linear-gradient(
 		to right,
 		#5461c8,
@@ -173,4 +176,25 @@ body main {
 	100% {
 		background-position: 200% 0;
 	}
+}
+
+.popup-hover .popup {
+	z-index: -100;
+	position: absolute;
+	top: -100;
+	left: 0;
+	height: 200%;
+	width: inherit;
+	transition: transform 0.3s ease, z-index 0s 0.3s;
+	transform: translateY(0%);
+	padding: 10px;
+}
+
+.popup-hover:hover .popup {
+	transform: translateY(-100%);
+}
+
+.popup > * {
+	aspect-ratio: 1;
+	height: 100%;
 }

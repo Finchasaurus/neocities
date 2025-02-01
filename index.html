@@ -5,6 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta nae="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="/styles/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/styles/animations.css" rel="stylesheet" type="text/css" media="all" />
 		<link rel="icon" type="image/x-icon" href="/assets/shuichi.jpg" />
 	</head>
 	<body>
@@ -13,11 +14,16 @@
 			<h2>Home of the best cat in the world</h2>
 		</header>
 		<nav class="hover-stripe">
-			<div>meow</div>
-			<div>meow</div>
-			<div>meow</div>
-			<div>meoeeee</div>
-			<footer class="stripe" />
+			<div class="button">meow</div>
+			<div class="button">meow</div>
+			<div class="button">meow</div>
+			<div class="button">meoeeee</div>
+			<footer class="popup-hover play-animation-children wiggle-shake">
+				<div class="popup animation-target-children">
+					<img src="/assets/github-mark.svg" alt="Github" />
+				</div>
+				<div class="stripe"></div>
+			</footer>
 		</nav>
 		<main>thing</main>
 	</body>
